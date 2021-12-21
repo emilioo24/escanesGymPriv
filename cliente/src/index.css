@@ -94,6 +94,7 @@ main h1 {
 main p {
   padding: 25px;
   color: lightgray;
+  font-size: 18px;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -112,6 +113,14 @@ hr {
 }
 .nosotrosN h2 {
   color: yellow;
+}
+
+.entrenadoresN a {
+  color: rgb(59, 126, 250);
+  text-decoration: none;
+}
+.entrenadoresN a:hover {
+  text-decoration: underline;
 }
 
 /* FOOTER */
@@ -146,7 +155,7 @@ footer span {
   width: 33%;
 }
 .redesF a {
-  color: rgb(59, 59, 250);
+  color: rgb(59, 126, 250);
   text-decoration: none;
 }
 .redesF a:hover {
@@ -157,7 +166,7 @@ footer span {
   width: 33%;
 }
 .contactoF a {
-  color: rgb(59, 59, 250);
+  color: rgb(59, 126, 250);
   text-decoration: none;
 }
 .contactoF a:hover {
@@ -171,13 +180,15 @@ footer span {
 
 
 /* FORMULARIO */
-
-form {
+.form span {
+  font-size: 18px;
+}
+.form {
   margin-left: 35%;
   margin-right: 35%;
   text-align: left;
 }
-form input {
+.form input {
   padding: 5px;
   margin: 5px;
   background-color: black;
@@ -189,17 +200,17 @@ form input {
   transition: border-color;
   transition-duration: 0.3s;
 }
-form input:focus {
+.form input:focus {
   outline: none;
   border-color: white;
 }
-form input:hover {
+.form input:hover {
   border-color: white;
   transition: border-color;
   transition-duration: 0.3s;
 }
 
-form select {
+.form select {
   padding: 5px;
   margin: 5px;
   background-color: black;
@@ -211,10 +222,10 @@ form select {
   transition: border-color;
   transition-duration: 0.3s;
 }
-form select:focus {
+.form select:focus {
   outline: none;
 }
-form select:hover {
+.form select:hover {
   border-color: white;
   transition: border-color;
   transition-duration: 0.3s;
@@ -259,13 +270,15 @@ textarea:hover {
   color: yellow;
   font-size: 18px;
   border-radius: 5px;
-  transition: padding, background-color;
+  transition: padding, background-color, border, color;
   transition-duration: 0.3s;
 }
 .btnForm button:hover {
   cursor: pointer;
   background-color: black;
-  transition: padding, background-color;
+  border: 1px white solid;
+  color: white;
+  transition: padding, background-color, border, color;
   transition-duration: 0.3s;
 }
 
@@ -312,7 +325,7 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 900px) and (min-width: 851px) {
 
-  form {
+  .form {
     margin-left: 27%;
     margin-right: 27%;
   }
@@ -321,7 +334,7 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 850px) and (min-width: 601px) {
 
-  form {
+  .form {
     margin-left: 27%;
     margin-right: 27%;
   }
@@ -330,7 +343,7 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 600px) and (min-width: 451px) {
 
-  form {
+  .form {
     margin-left: 20%;
     margin-right: 20%;
   }
@@ -339,11 +352,11 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 450px) and (min-width: 0px) {
 
-  form {
+  .form {
     margin-left: 12%;
     margin-right: 12%;
   }
-  form input {
+  .form input {
     width: 93%;
   }
   textarea {

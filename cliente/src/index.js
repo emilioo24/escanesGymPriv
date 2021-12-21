@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -12,6 +12,11 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 function Main() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return(
     <div>
       <Helmet>

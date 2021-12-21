@@ -27,7 +27,7 @@ function ContactoFooter() {
             <br />
             <span>Email: <a href="mailto:contacto@escanesgym.com">contacto@escanesgym.com</a></span>
             <br />
-            <span>Ubicación: <a href="https://goo.gl/maps/gz8nVoLDkEw4DQScA">Juan Baez 275</a></span>
+            <span>Ubicación: <a href="https://goo.gl/maps/gz8nVoLDkEw4DQScA" target="_blank" rel="noreferrer">Juan Baez 275</a></span>
         </div>
     );
 }
@@ -45,9 +45,9 @@ function Redes() {
     return (
         <div className="redesF">
             <h3>Redes Sociales</h3>
-            <span><a href="https://instagram.com/gimnasio.escanes">Instagram</a></span>
+            <span><a href="https://instagram.com/gimnasio.escanes" target="_blank" rel="noreferrer">Instagram</a></span>
             <br />
-            <span><a href="https://facebook.com/gimnasio.escanes">Facebook</a></span>
+            <span><a href="https://facebook.com/gimnasio.escanes" target="_blank" rel="noreferrer">Facebook</a></span>
         </div>
     );
 }

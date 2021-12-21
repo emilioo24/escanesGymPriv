@@ -27,7 +27,7 @@ function QuienesSomos() {
     return (
         <div className="quienesC">
             <h1>¿Quienes Somos?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis aperiam consectetur impedit obcaecati beatae fuga delectus distinctio asperiores dolores, quod facere tempora cum maxime debitis quaerat quam, consequatur, inventore hic.</p>
+            <p>Somos un gimnasio familiar ubicado en Paraná y especializado para deportistas del club Paracao y cualquier persona que desee inscribirse a nuestras clases. Nuestro dilema es te acompañamos, te cuidamos y te entranamos.</p>
         </div>
     );
 }
@@ -50,7 +50,7 @@ function Semipersonal() {
             <br />
             <br />
             <h1>¿Entrenamiento Semipersonal?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis aperiam consectetur impedit obcaecati beatae fuga delectus distinctio asperiores dolores, quod facere tempora cum maxime debitis quaerat quam, consequatur, inventore hic.</p>
+            <p>Se trata de un entrenamiento semipersonalizado para todos nuestros alumnos, dependiendo de lo que ellos estén buscando. Cada alumno busca resultados diferentes a largo plazo y nosotros nos ocuparemos de darle un plan de entrenamiento a seguir para poder llegar al objetivo deseado.</p>
         </div>
     );
 }

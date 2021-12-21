@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from './header';
 import Foot from './footer';
 import { Helmet } from 'react-helmet';
@@ -6,6 +6,10 @@ import Axios from 'axios';
 
 
 function Contacto() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const [nombre, setNombre] = useState('');
   const [email, setEmail] = useState('');
@@ -19,7 +23,17 @@ function Contacto() {
       telefono: telefono,
       mensaje: mensaje 
     }).then(function() {
-      alert('Mensaje Enviado')
+      if (nombre === "" || nombre === undefined || nombre === null) {
+        alert('Complete el campo Nombre');
+      } else if (email === "" || email === undefined || email === null) {
+        alert('Complete el campo Correo Electrónico');
+      } else if (mensaje === "" || mensaje === undefined || mensaje === null) {
+        alert('Complete el campo Mensaje');
+      } else {
+        alert('Mensaje enviado');
+        console.log('Mensaje enviado');
+        window.location.reload();
+      }
     });
   }
 
@@ -35,31 +49,31 @@ function Contacto() {
           </div>
           <br />
           <div>
-              <form method="post">
-                  <span>Nombre y Apellido</span>
+              <div className="form">
+                  <span>Nombre y Apellido *</span>
                   <br />
                   <input type="text" name="nombre" id="nombre" onChange={(e) => {setNombre(e.target.value);}} required></input>
                   <br />
                   <br />
-                  <span>Correo Electrónico</span>
+                  <span>Correo Electrónico *</span>
                   <br />
                   <input type="email" name="email" id="email" onChange={(e) => {setEmail(e.target.value);}} required></input>
                   <br />
                   <br />
                   <span>Teléfono</span>
                   <br />
-                  <input type="text" name="telefono" id="telefono" onChange={(e) => {setTelefono(e.target.value);}} required></input>
+                  <input type="text" name="telefono" id="telefono" onChange={(e) => {setTelefono(e.target.value);}}></input>
                   <br />
                   <br />
-                  <span>Mensaje</span>
+                  <span>Mensaje *</span>
                   <br />
-                  <textarea name="mensaje" id="mensaje" cols="" rows="" onChange={(e) => {setMensaje(e.target.value);}}></textarea>
+                  <textarea name="mensaje" id="mensaje" cols="" rows="" onChange={(e) => {setMensaje(e.target.value);}} required></textarea>
                   <br />
                   <br />
                   <div className="btnForm">
                     <button onClick={Enviarmsj}>Enviar</button>
                   </div>
-              </form>
+              </div>
           </div>
       </main>
       <br />
