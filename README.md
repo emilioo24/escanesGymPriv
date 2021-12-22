@@ -8,6 +8,8 @@ o también pueden inscribirse de forma online, completando otro formulario elegi
 En mi caso utilicé React para el Frontend, NodeJS para el Backend y MySQL para la base de datos.
 
 Para subir la aplicación a internet utilicé Heroku dividiendo el Back del Front.
+Lo que hice fue separar el cliente del servidor y subirlo como dos proyectos distintos, pero estan conectados. Si el Back no funciona, los formularios tampoco, y si el Front no funciona, no se pueden enviar formularios.
 
 Frontend: https://escanesgym-front.herokuapp.com/
+
 Backend: https://escanesgym-back.herokuapp.com/
