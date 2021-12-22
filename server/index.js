@@ -78,6 +78,6 @@ app.post('/api/inscribir', function(req, res) {
 
 });
 
-app.listen(3001, function () {
-    console.log('Corriendo en el puerto 3001');
+app.listen(process.env.PORT || 5000, function () {
+    console.log('Corriendo en el puerto 5000');
 });

@@ -1,12 +1,12 @@
 const mysql = require('mysql2');
 const { promisify } = require('util');
 
-
+//Los datos estan ocultos porque este archivo es solo de demostración
 const conexion = mysql.createPool({
-    host: '31.170.160.154',
-    database: 'u448016988_pelvison',
-    user: 'u448016988_pelvison',
-    password: 'Pelvison24'
+    host: 'XXXXXXXX',
+    database: 'XXXXXXXX',
+    user: 'XXXXXXXXXX',
+    password: 'XXXXXXXXX'
 });
 
 conexion.getConnection(function (error, result) {
